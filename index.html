@@ -1947,13 +1947,18 @@ a {
 }
 
 body {
-  background: url("./images/mountain.png") center top no-repeat,
-              url("./images/trees.png") center bottom repeat-x;
-  background-color: floralwhite;
+  background: url("./images/mountain.png") center top no-repeat;
+  background-position-y: 68%;
+  background-position-x: 50%;
+  background-size: 117em;
+  background-color: lightblue;
   color: #585858;
   font-size: 125%;
 }
-
+footer{
+  background: url("./images/trees.png");
+  background-position-y: 100%;
+  }
 body.safe-browsing {
   background-color: rgb(206, 52, 38);
   color: white;
@@ -2050,7 +2055,7 @@ input[type=checkbox] {
   font-size: 1em;
   line-height: 1.6rem;
   margin: 70px auto 0;
-  margin-top: 15rem;
+  margin-top: 20em;
   max-width: 300rem;
   width: 100%;
 }
@@ -2544,21 +2549,21 @@ html[subframe] body {
 </head>
 
 <body id="t">
-<div class="container-fluid">
-  <div class="onlyforchrome" style="margin-top:10px;font-size: 30px;text-align: center;font-family: Helvetica;">"WIPCamp#11..Comming Soon!!"</div>
+<div class="container-fluid" >
+  <div class="onlyforchrome" style="margin-top:10px;font-size: 30px;text-align: center;font-family: Helvetica;">"WIP Camp #11..Comming Soon!!"</div>
   <div class="onlyforchrome" style="margin-top:15px;text-align:center;color:#8a8a8a;margin-bottom:80px; font-size:.8em;line-height:1.2em;font-family: Georgia;">The new Chapter is begin<br/> Press "Space" to jump your Wippo and start the game.</div>
   <div id="main-frame-notchrome" style="display:none; margin-top:50px;">Sorry, this game only runs on the Google Chrome! You can download it free <a href="https://www.google.com/chrome">here</a></div>
   <!-- canvas -->
-<div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
-    <div id="offline-resources" jstcache="0">
-    <div id="offline-resources-1x"jstcache="0">
-      <img id="1x-obstacle-large" src="./images/1x-obstacle-large.png" jstcache="0">
-      <img id="1x-obstacle-small" src="./images/1x-obstacle-small.png" jstcache="0">
-      <img id="1x-cloud" src="./images/1x-cloud.png" jstcache="0">
-      <img id="1x-text" src="./images/1x-text.png" jstcache="0">
-      <img id="1x-horizon" src="./images/1x-horizon.png" jstcache="0">
-      <img id="1x-trex" src="./images/1x-hanuman.png" jstcache="0">
-      <img id="1x-restart" src="./images/1x-restart.png" jstcache="0">
+    <div id="main-frame-error" class="interstitial-wrapper" jstcache="0">
+      <div id="offline-resources" jstcache="0">
+        <div id="offline-resources-1x"jstcache="0">
+          <img id="1x-obstacle-large" src="./images/1x-obstacle-large.png" jstcache="0">
+          <img id="1x-obstacle-small" src="./images/1x-obstacle-small.png" jstcache="0">
+          <img id="1x-cloud" src="./images/1x-cloud.png" jstcache="0">
+          <img id="1x-text" src="./images/1x-text.png" jstcache="0">
+          <img id="1x-horizon" src="./images/1x-horizon.png" jstcache="0">
+          <img id="1x-trex" src="./images/1x-hanuman.png" jstcache="0">
+          <img id="1x-restart" src="./images/1x-restart.png" jstcache="0">
     </div>
     <div id="offline-resources-2x" jstcache="0">
       <img id="2x-obstacle-large" src="./images/2x-obstacle-large.png" jstcache="0">
@@ -2582,34 +2587,26 @@ html[subframe] body {
     } else {
       document.getElementById("main-frame-notchrome").style.display="";
     }
-  </script>
+    </script>
 
 <div class="onlyforchrome">
-  <div id="socialbutts" class="addthis_toolbox addthis_default_style" style="text-align:center; padding-top:65px;">
-      <table border="0" style="margin:0 auto;"><tr>
-			<td><div
-				class="fb-like"
-				data-share="false"
-				data-width="150"
-				data-show-faces="false">
-			</div></td>
-			<td style="padding-left:15px;"><div class="g-plusone" data-size="medium" data-href="http://apps.thecodepost.org/trex/trex.html"></div></td>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></td>
-      </tr></table>
-    </div>
-  </div>
+  
+</div>
 
-    <script type="text/javascript">
+<script type="text/javascript">
     if (navigator.userAgent.toLowerCase().indexOf('chrome') <= -1) {
-	  hideClass(".onlyforchrome");
-	}
-  </script>
+      hideClass(".onlyforchrome");
+    }
+    </script>
 	  
-
     
-
+    
+    
   </div>
   <!-- canvas-end -->
+</div>
 </body>
+
+<footer>.</footer>
 
 </html>
